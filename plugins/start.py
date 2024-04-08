@@ -61,7 +61,7 @@ async def start_command(client: Client, message: Message):
             await update_verify_status(id, is_verified=True, verified_time=time.time())
             if verify_status["link"] == "":
                 reply_markup = None
-            await message.reply(f"ʏᴏᴜʀ ᴛᴏᴋᴇɴ sᴜᴄᴄᴇssғᴜʟʟʏ ᴠᴇʀɪғɪᴇᴅ ᴀɴᴅ ᴠᴀʟɪᴅ ғᴏʀ: 𝟸𝟺 ʜᴏᴜʀ", reply_markup=reply_markup, protect_content=False, quote=True)
+            await message.reply(f"ʏᴏᴜʀ ᴛᴏᴋᴇɴ sᴜᴄᴄᴇssғᴜʟʟʏ ᴠᴇʀɪғɪᴇᴅ ᴀɴᴅ ᴠᴀʟɪᴅ ғᴏʀ: 𝟔 ʜᴏᴜʀ", reply_markup=reply_markup, protect_content=False, quote=True)
 
         elif len(message.text) > 7 and verify_status['is_verified']:
             try:
@@ -149,7 +149,7 @@ async def start_command(client: Client, message: Message):
                     [InlineKeyboardButton("• ᴄʟɪᴄᴋ ʜᴇʀᴇ •", url=link)],
                     [InlineKeyboardButton('• ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴛʜᴇ ʙᴏᴛ •', url=full_tut_url)]
                 ]
-                await message.reply(f"<b>ʙʀᴏ ʏᴏᴜʀ ᴀᴅs ᴛᴏᴋᴇɴ ɪs ᴇxᴘɪʀᴇᴅ, ʀᴇғʀᴇsʜ ʏᴏᴜʀ ᴛᴏᴋᴇɴ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ.\n\nᴛᴏᴋᴇɴ ᴛɪᴍᴇᴏᴜᴛ: {get_exp_time(VERIFY_EXPIRE)}\n\nᴡʜᴀᴛ ɪs ᴛʜᴇ ᴛᴏᴋᴇɴ?\n\nᴛʜɪs ɪs ᴀɴ ᴀᴅs ᴛᴏᴋᴇɴ. Iғ ʏᴏᴜ ᴘᴀss 𝟷 ᴀᴅ, ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴛʜᴇ ʙᴏᴛ ғᴏʀ 𝟸𝟺 ʜᴏᴜʀ ᴀғᴛᴇʀ ᴘᴀssɪɴɢ ᴛʜᴇ ᴀᴅ.</b>", reply_markup=InlineKeyboardMarkup(btn), protect_content=False, quote=True)
+                await message.reply(f"<b>ʙʀᴏ ʏᴏᴜʀ ᴀᴅs ᴛᴏᴋᴇɴ ɪs ᴇxᴘɪʀᴇᴅ, ʀᴇғʀᴇsʜ ʏᴏᴜʀ ᴛᴏᴋᴇɴ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ.\n\nᴛᴏᴋᴇɴ ᴛɪᴍᴇᴏᴜᴛ: {get_exp_time(VERIFY_EXPIRE)}\n\nᴡʜᴀᴛ ɪs ᴛʜᴇ ᴛᴏᴋᴇɴ?\n\nᴛʜɪs ɪs ᴀɴ ᴀᴅs ᴛᴏᴋᴇɴ. Iғ ʏᴏᴜ ᴘᴀss 𝟷 ᴀᴅ, ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴛʜᴇ ʙᴏᴛ ғᴏʀ 𝟔 ʜᴏᴜʀ ᴀғᴛᴇʀ ᴘᴀssɪɴɢ ᴛʜᴇ ᴀᴅ.</b>", reply_markup=InlineKeyboardMarkup(btn), protect_content=False, quote=True)
 
 # ... (rest of the code remains unchanged)) credit @codeflix_bots @erotixe 
 
